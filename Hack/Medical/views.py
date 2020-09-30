@@ -73,7 +73,7 @@ def panic_button(request):
 		pre_Health=email[0]['link__pre_Health']
 		emergency_contact=email[0]['link__emergency_contact']
 		name=email[0]['link__name']
-		yag = yagmail.SMTP('kaustubh.1822it1070@kiet.edu', '------------------')
+		yag = yagmail.SMTP('kaustubh.1822it1070@kiet.edu', '------------------') #Enter your password here !
 		subject = "ALERT ALERT ALERT"
 		contents = ["HELP ! My name is "+name+" and I am your patient. I'm in a serious problem and in severe health issues, My previous health problems are : "+pre_Health+" . Do inform my emergency contact " + emergency_contact+" ."]
 		# yag.send(Email,subject,contents)
